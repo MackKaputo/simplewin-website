@@ -1,0 +1,5 @@
+.body {
+    background: radial-gradient(ellipse, #020b1c 0%, #031629 80%, rgb(126, 83, 4));
+    background-size: cover;
+    background-attachment: fixed;
+  }
