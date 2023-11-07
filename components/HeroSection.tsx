@@ -12,12 +12,12 @@ import gameTableImage from "../public/images/game_table_view.jpeg"
 
 export default function HeroSection() {
     return(
-        <Box  minH={["80vh"]}>
+        <Box  minH={["60vh"]}>
           <Box pt={["1rem"]} px={["1rem"]}>
-            <Text fontSize={["md"]} transform={["rotate(-2deg)"]} textAlign={["center"]} fontWeight={["bold"]}>
-              Bet the Fun Way: Easy, Exciting, and All About You and Your Friends!
+            <Text fontSize={["xl"]} transform={["rotate(0deg)"]} textAlign={["center"]} fontWeight={["bold"]}>
+              Bet the Fun Way: Easy, Exciting, and All About You!
             </Text>
-            <Text fontSize={["md"]} transform={["rotate(-2deg)"]} textAlign={["center"]}>
+            <Text fontSize={["md"]} transform={["rotate(0deg)"]} textAlign={["center"]}>
               Say Goodbye to Complex Games.
             </Text>
           </Box>
@@ -35,12 +35,6 @@ export default function HeroSection() {
               <Button size={["lg"]} leftIcon={<TbBrandCashapp style={{fontSize: "1.3rem"}}/>} rightIcon={<GiTrophy style={{fontSize: "1.3rem"}}/>} colorScheme='orange'>
                 Enter to Play
               </Button>
-            </Box>
-
-            <Box pt={["4rem"]} fontSize={["xl"]}>
-              <Text borderBottom={["1px solid white"]}>
-                How it Works in 4 Steps
-              </Text>
             </Box>
           </Box>
 
