@@ -13,7 +13,7 @@ import gameTableImage from "../public/images/game_table_view.jpeg"
 export default function HeroSection() {
     return(
         <Box  minH={["60vh"]}>
-          <Box pt={["1rem"]} px={["1rem"]}>
+          <Box pt={["0rem"]} px={["1rem"]}>
             <Text fontSize={["xl"]} transform={["rotate(0deg)"]} textAlign={["center"]} fontWeight={["bold"]}>
               Bet the Fun Way: Easy, Exciting, and All About You!
             </Text>
@@ -22,9 +22,9 @@ export default function HeroSection() {
             </Text>
           </Box>
 
-          <Box pt={["1.5rem"]} display={["grid"]} placeItems={["center"]}>
+          <Box pt={["1.5rem"]} display={["grid"]} placeItems={["center"]} transform={["skew(20deg) rotateX(.07turn)"]}>
             <Image
-              width={260}
+              width={200}
               src={gameTableImage}
               alt='GameImage'
             />
