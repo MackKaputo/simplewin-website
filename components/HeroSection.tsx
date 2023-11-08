@@ -30,7 +30,7 @@ export default function HeroSection() {
             />
           </Box>
 
-          <Box display={["grid"]} placeItems={["center"]} pt={["2.5rem"]}>
+          <Box display={["grid"]} placeItems={["center"]} pt={["2rem"]}>
             <Box>
               <Button size={["lg"]} leftIcon={<TbBrandCashapp style={{fontSize: "1.3rem"}}/>} rightIcon={<GiTrophy style={{fontSize: "1.3rem"}}/>} colorScheme='orange'>
                 Enter to Play
