@@ -22,12 +22,14 @@ export default function HeroSection() {
             </Text>
           </Box>
 
-          <Box pt={["1.5rem"]} display={["grid"]} placeItems={["center"]} transform={["skew(20deg) rotateX(.07turn)"]}>
+          <Box pt={["1.5rem"]} display={["grid"]} placeItems={["center"]}>
+            <Box>
             <Image
               width={200}
               src={gameTableImage}
               alt='GameImage'
             />
+            </Box>
           </Box>
 
           <Box display={["grid"]} placeItems={["center"]} pt={["2rem"]}>

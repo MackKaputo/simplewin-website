@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
 .body {
     background: radial-gradient(ellipse, #020b1c 0%, #031629 80%, rgb(126, 83, 4));
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Exo', sans-serif;
   }

@@ -1,23 +1,24 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Flex } from '@chakra-ui/react'
 import React from 'react'
 
 const Features = () => {
   return (
-    <Box py={["2rem"]}>
-        Game features here:
+    <Flex py={["2rem"]} direction={["column"]} gap={["1rem"]} px={["1rem"]}>
         <Box>
-            Built with you in mind, we want to build the game you want to play. We will listen to you.
+            {`Your game, your rules! We're building an exciting platform just for you. 
+            Your input matters, and we're here to listen and adapt. 
+            Join us for a gaming experience crafted to your preferences!`}
         </Box>
         <Box>
-            Chat and reactions with other players
+            Chat, React, Play. Your expressions, your game
         </Box>
         <Box>
-            Play tournaments
+            Play tournaments of all sizes: mini, medium, large. Your game, your choice!
         </Box>
         <Box>
-            Become a VIP member for exclusive offers, perks and network of potential friends!
+            Unlock VIP status for exclusive perks, offers, and a network of potential friends. Elevate your experience with us!
         </Box>
-    </Box>
+    </Flex>
   )
 }
 

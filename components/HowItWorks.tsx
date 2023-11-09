@@ -36,7 +36,7 @@ const HowItWorks = () => {
                     Make a deposit (Buy Tokens)
                 </Box>
                 <Box fontSize={["sm"]}>
-                    Here are some explanations about deposits. simple and straight forward
+                    Buy tokens and dive into the gaming fun! Choose your preferred method, whether in-person or electronic payments.
                 </Box>
             </Box>
         </Flex>
@@ -67,13 +67,14 @@ const HowItWorks = () => {
                     Make a Withdrawal
                 </Box>
                 <Box fontSize={["sm"]}>
-                    Withdraw tokens, converted to real money as they were bought
+                    {`Withdraw your tokens, convert to real money effortlessly! Choose from various methods, 
+                    in-person or electronic payments. It's your winnings, your way!`}
                 </Box>
             </Box>
         </Flex>
-        <Box px={["1.5rem"]} boxShadow={["dark-lg"]} py={["1rem"]} mx={["1rem"]}>
-            Wait... You can forget step 2 and 4 to play without any commitment by joining free game tables!
-            These are for you to play without buying any tokens as a demo!
+        <Box px={["1.5rem"]} boxShadow={["dark-lg"]} py={["1rem"]} mx={[".5rem"]} borderRadius={["lg"]} textAlign={["justify"]}>
+            Discover the excitement! Go to the free games section and join a table, where you can experience demos without any deposit. 
+            Test the gameplay and immerse yourself in the thrill, all without spending a dime!
         </Box>
     </Box>
   )

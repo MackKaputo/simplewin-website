@@ -5,7 +5,18 @@ import React from 'react'
 const Footer = () => {
   return (
     <Box py={["2rem"]} px={["1.5rem"]} bg={backgroundColors.dark_gray} opacity={[".7"]}>
-        Here Comes the Footer Boys!
+        <Box>
+          About
+        </Box>
+        <Box>
+          Contact
+        </Box>
+        <Box>
+          FAQ
+        </Box>
+        <Box>
+          Social Media Links
+        </Box>
     </Box>
   )
 }

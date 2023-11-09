@@ -1,16 +1,16 @@
-import { Box, Text } from '@chakra-ui/react'
+import { Box, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
 
 const HowToPlay = () => {
   return (
-    <Box mb={["1rem"]} p={["1.5rem"]} textAlign={["justify"]}>
+    <Flex mb={["1rem"]} p={["1rem"]} textAlign={["justify"]} direction={["column"]} gap={["1rem"]}>
         <Box fontSize={["xl"]} display={["grid"]} placeItems={["center"]}>
             <Text borderBottom={["1px solid white"]}>
                 How To Play
             </Text>
         </Box>
-        <Box>
-          {`Are you ready to test your luck and strategy in this exciting betting game? Here's how to play:`}
+        <Flex direction={["column"]} gap={[".8rem"]}>
+          
           <Box>
             <Text fontWeight={["bold"]} py={[".3rem"]}>
               Join a Table
@@ -74,12 +74,12 @@ const HowToPlay = () => {
             </Text>
           </Box>
 
-          <Box>
+          <Box boxShadow={["dark-lg"]} py={["1rem"]} mx={[".5rem"]} borderRadius={["lg"]} textAlign={["justify"]} px={["1rem"]}>
             {`That's the essence of the game! With every round, the stakes get higher, and 
-            it's a battle of wits and strategy. Can you outsmart your opponent and claim victory?`}
+            it's a battle of wits and strategy. `} <br />Can you outsmart your opponent and claim victory?
           </Box>
-        </Box>
-    </Box>
+        </Flex>
+    </Flex>
   )
 }
 
