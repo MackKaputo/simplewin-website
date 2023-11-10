@@ -15,6 +15,14 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+  Drawer,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerHeader,
+  DrawerCloseButton,
+  DrawerBody,
+  List,
+  ListItem,
 } from '@chakra-ui/react'
 import {
   HamburgerIcon,
@@ -25,8 +33,10 @@ import {
 import { backgroundColors } from '@/app/colors'
 import Logo from "@/public/images/logo.svg"
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function NavBar() {
+    const { isOpen, onClose, onOpen } = useDisclosure()
     return(
         <Flex borderStyle={["solid"]} py={[".7rem"]} justify={["space-between"]} borderBottom={["1px solid rgba(255, 166, 0, 0.288)"]}>
             <Flex gap={["2rem"]} px={[".5rem"]}>
@@ -50,8 +60,67 @@ export default function NavBar() {
                 width={120}
                 height={9}
                 /> */}
-                <HamburgerIcon sx={{ fontSize: "2.6rem"}}/>
+                <HamburgerIcon 
+                  sx={{ fontSize: "2.6rem"}}
+                  onClick={onOpen}
+                />
             </Box>
+
+            <Drawer
+              isOpen={isOpen}
+              onClose={onClose}
+              placement='left'
+            >
+              <DrawerOverlay />
+              <DrawerContent bg={backgroundColors.card_color} opacity=".9">
+                <DrawerCloseButton />
+                <DrawerHeader>
+                  <Image
+                    src={Logo}
+                    alt='SimpleWin'
+                    width={110}
+                    height={9}
+                  /> 
+                </DrawerHeader>
+                <DrawerBody>
+                  <Box>
+                    <List>
+                      <Link href="/">
+                        <ListItem p="1rem" onClick={onClose}>
+                          About
+                        </ListItem>
+                      </Link>
+                      <hr style={{ opacity: ".5"}}/>
+                      <Link href="/">
+                        <ListItem p="1rem" onClick={onClose}>
+                          Contact
+                        </ListItem>
+                      </Link>
+                      <hr style={{ opacity: ".5"}}/>
+                      {/* <Box pt={["2rem"]}>
+                        <Select defaultValue={platformLanguage} onChange={changeLanguage}>
+                          <Box as="option" value={"fr"}>Français</Box>
+
+                          <Box as="option" value={"en"}>English</Box>
+                        </Select>
+                      </Box> */}
+                    </List>
+                  </Box>
+                  <Flex pt={["3rem"]} justify={["space-around"]}>
+                    <Box>
+                      <Button colorScheme='orange'>
+                        Signup
+                      </Button>
+                    </Box>
+                    <Box>
+                      <Button colorScheme='orange'>
+                        Signin
+                      </Button>
+                    </Box>
+                  </Flex>
+                </DrawerBody>
+              </DrawerContent>
+            </Drawer>
             
         </Flex>
     )
