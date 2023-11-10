@@ -28,7 +28,7 @@ import Image from 'next/image'
 
 export default function NavBar() {
     return(
-        <Flex borderStyle={["solid"]} py={[".7rem"]} justify={["space-between"]}>
+        <Flex borderStyle={["solid"]} py={[".7rem"]} justify={["space-between"]} borderBottom={["1px solid rgba(255, 166, 0, 0.288)"]}>
             <Flex gap={["2rem"]} px={[".5rem"]}>
                 {/* <Button variant={["link"]}>
                     Sign In

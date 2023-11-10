@@ -3,20 +3,36 @@ import React from 'react'
 
 const Features = () => {
   return (
-    <Flex py={["2rem"]} direction={["column"]} gap={["1rem"]} px={["1rem"]}>
-        <Box>
-            {`Your game, your rules! We're building an exciting platform just for you. 
-            Your input matters, and we're here to listen and adapt. 
-            Join us for a gaming experience crafted to your preferences!`}
+    <Flex direction={["column"]} gap={["1rem"]} px={["1rem"]} pb={["3rem"]}>
+        <Box py={["1rem"]}>
+            <Box fontWeight={["bold"]} fontSize={["lg"]} py={[".4rem"]}>
+                🤝 Your Voice Matters!
+            </Box>
+            <Box>
+                {`
+                Our platform is designed with your preferences in mind, 
+                and we're committed to creating a game that not only excites but resonates with every player. Your voice matters,
+                and we're here to listen and adapt, ensuring a fair and thrilling adventure that evolves with your input. 
+                Join us on this journey, where your ideas shape the game!`
+                }
+            </Box>
         </Box>
-        <Box>
-            Chat, React, Play. Your expressions, your game
+        <Box py={["1rem"]}>
+            <Box fontWeight={["bold"]} fontSize={["lg"]} py={[".4rem"]}>
+                🚀 In-Game Interaction - Expressions in Your Local Language!
+            </Box>
+            <Box>
+                Chats in Swahili, Lingala, or French!
+            </Box>
+                Chat, React, Play. Your expressions, your game
         </Box>
-        <Box>
-            Play tournaments of all sizes: mini, medium, large. Your game, your choice!
-        </Box>
-        <Box>
-            Unlock VIP status for exclusive perks, offers, and a network of potential friends. Elevate your experience with us!
+        <Box py={["1rem"]}>
+            <Box fontWeight={["bold"]} fontSize={["lg"]} py={[".4rem"]}>
+                👫 Play Against Friends - Because Gaming is Better Together!
+            </Box>
+            <Box>
+                {`You can join a table and Invite your buddies for epic showdowns, showcase your skills, and create memories that'll last a lifetime!`}
+            </Box>
         </Box>
     </Flex>
   )

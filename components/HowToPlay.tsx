@@ -16,7 +16,7 @@ const HowToPlay = () => {
               Join a Table
             </Text>
             <Text>
-              {`Start by joining a table. Decide how many tokens you want to bring to the game. 
+              {`Start by joining a table. Once you're in, Decide how many tokens you want to bring to the game to take a seat. 
               Let's say you and your opponent both join with 10 tokens each.`}
             </Text>
           </Box>

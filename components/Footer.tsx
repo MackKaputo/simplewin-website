@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <Box py={["2rem"]} px={["1.5rem"]} bg={backgroundColors.dark_gray} opacity={[".7"]}>
+    <Box py={["2rem"]} px={["1.5rem"]} bg={backgroundColors.dark_gray} opacity={[".8"]}>
         <Box>
           About
         </Box>
