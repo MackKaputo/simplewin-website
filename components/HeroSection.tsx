@@ -12,8 +12,8 @@ import gameTableImage from "../public/images/game_table_view.jpeg"
 
 export default function HeroSection() {
     return(
-      <Box  minH={["60vh"]} pt={["1rem"]}>
-        <Box pt={["0rem"]} px={["1rem"]}>
+      <Box  minH={["60vh"]} pt={["1rem"]} px={["1rem"]}>
+        <Box pt={["0rem"]} >
           <Text fontSize={["xl"]} textAlign={["center"]} fontWeight={["bold"]}>
             Bet the Fun Way: Easy, Exciting, and All About You!
           </Text>
