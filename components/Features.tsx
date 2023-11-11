@@ -1,5 +1,6 @@
 import { backgroundColors } from '@/app/colors'
 import { Box, Button, Flex } from '@chakra-ui/react'
+import Link from 'next/link'
 import React from 'react'
 
 const Features = () => {
@@ -48,9 +49,11 @@ const Features = () => {
                     The thrill of victory awaits in the arena of champions `}🎖️ 
             </Box>
             <Box display={["flex"]} justifyContent={["flex-start"]} pt={["1rem"]}>
-                <Button variant={["outline"]} color={["white"]} borderColor={backgroundColors.pink}>
-                    Learn more
-                </Button>
+                <Link href="/how-tournaments-work">
+                    <Button variant={["outline"]} color={["white"]} borderColor={backgroundColors.pink}>
+                        Learn more
+                    </Button>
+                </Link>
             </Box>
         </Box>
         <Box py={["1rem"]}>

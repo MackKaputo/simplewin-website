@@ -36,100 +36,97 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function NavBar() {
-    const { isOpen, onClose, onOpen } = useDisclosure()
-    return(
-        <Flex borderStyle={["solid"]} py={[".7rem"]} justify={["space-between"]} borderBottom={["1px solid rgba(255, 166, 0, 0.288)"]}>
-            <Flex gap={["2rem"]} px={[".5rem"]}>
-                {/* <Button variant={["link"]}>
-                    Sign In
-                </Button>
-                <Button colorScheme='orange'>
-                    Sign Up
-                </Button> */}
+  
+  const { isOpen, onClose, onOpen } = useDisclosure()
+  return(
+      <Flex borderStyle={["solid"]} py={[".7rem"]} justify={["space-between"]} borderBottom={["1px solid rgba(255, 166, 0, 0.288)"]}>
+          <Flex gap={["2rem"]} px={[".5rem"]}>
+              {/* <Button variant={["link"]}>
+                  Sign In
+              </Button>
+              <Button colorScheme='orange'>
+                  Sign Up
+              </Button> */}
+              <Link href="/">
                 <Image
-                src={Logo}
-                alt='SimpleWin'
-                width={110}
-                height={9}
+                  src={Logo}
+                  alt='SimpleWin'
+                  width={110}
+                  height={9}
                 /> 
-            </Flex>
-            <Box px={[".5rem"]}>
-                {/* <Image
-                src={Logo}
-                alt='SimpleWin'
-                width={120}
-                height={9}
-                /> */}
-                <HamburgerIcon 
-                  sx={{ fontSize: "2.6rem"}}
-                  onClick={onOpen}
-                />
-            </Box>
+              </Link>
+          </Flex>
+          <Box px={[".5rem"]}>
+              <HamburgerIcon 
+                sx={{ fontSize: "2.6rem"}}
+                onClick={onOpen}
+              />
+          </Box>
 
-            <Drawer
-              isOpen={isOpen}
-              onClose={onClose}
-              placement='left'
-            >
-              <DrawerOverlay />
-              <DrawerContent bg={backgroundColors.card_color} opacity=".9">
-                <DrawerCloseButton />
-                <DrawerHeader>
-                  <Image
-                    src={Logo}
-                    alt='SimpleWin'
-                    width={110}
-                    height={9}
-                  /> 
-                </DrawerHeader>
-                <DrawerBody>
+          <Drawer
+            isOpen={isOpen}
+            onClose={onClose}
+            placement='left'
+          >
+            <DrawerOverlay />
+            <DrawerContent bg={backgroundColors.card_color} opacity=".9">
+              <DrawerCloseButton />
+              <DrawerHeader>
+                <Image
+                  src={Logo}
+                  alt='SimpleWin'
+                  width={110}
+                  height={9}
+                /> 
+              </DrawerHeader>
+              <DrawerBody>
+                <Box>
+                  <List>
+                    <Link href="/how-tournaments-work">
+                      <ListItem p="1rem" onClick={onClose}>
+                      How tournaments work
+                      </ListItem>
+                    </Link>
+                    <hr style={{ opacity: ".5"}} />
+                    <Link href="/">
+                      <ListItem p="1rem" onClick={onClose}>
+                        About
+                      </ListItem>
+                    </Link>
+                    <hr style={{ opacity: ".5"}}/>
+                    <Link href="/">
+                      <ListItem p="1rem" onClick={onClose}>
+                        Contact
+                      </ListItem>
+                    </Link>
+                    <hr style={{ opacity: ".5"}}/>
+                    {/* <Box pt={["2rem"]}>
+                      <Select defaultValue={platformLanguage} onChange={changeLanguage}>
+                        <Box as="option" value={"fr"}>Français</Box>
+
+                        <Box as="option" value={"en"}>English</Box>
+                      </Select>
+                    </Box> */}
+                  </List>
+                </Box>
+                <Flex pt={["3rem"]} justify={["space-around"]}>
                   <Box>
-                    <List>
-                      <Link href="/">
-                        <ListItem p="1rem" onClick={onClose}>
-                        How tournaments work
-                        </ListItem>
-                      </Link>
-                      <hr style={{ opacity: ".5"}} />
-                      <Link href="/">
-                        <ListItem p="1rem" onClick={onClose}>
-                          About
-                        </ListItem>
-                      </Link>
-                      <hr style={{ opacity: ".5"}}/>
-                      <Link href="/">
-                        <ListItem p="1rem" onClick={onClose}>
-                          Contact
-                        </ListItem>
-                      </Link>
-                      <hr style={{ opacity: ".5"}}/>
-                      {/* <Box pt={["2rem"]}>
-                        <Select defaultValue={platformLanguage} onChange={changeLanguage}>
-                          <Box as="option" value={"fr"}>Français</Box>
-
-                          <Box as="option" value={"en"}>English</Box>
-                        </Select>
-                      </Box> */}
-                    </List>
+                    <Button colorScheme='orange'>
+                      Signup
+                    </Button>
                   </Box>
-                  <Flex pt={["3rem"]} justify={["space-around"]}>
-                    <Box>
-                      <Button colorScheme='orange'>
-                        Signup
-                      </Button>
-                    </Box>
-                    <Box>
-                      <Button colorScheme='orange'>
-                        Signin
-                      </Button>
-                    </Box>
-                  </Flex>
-                </DrawerBody>
-              </DrawerContent>
-            </Drawer>
-            
-        </Flex>
-    )
+                  <Box>
+                    <Button colorScheme='orange'>
+                      Signin
+                    </Button>
+                  </Box>
+                </Flex>
+              </DrawerBody>
+            </DrawerContent>
+          </Drawer>
+          
+      </Flex>
+  )
 }
 
 function NavBar2() {
