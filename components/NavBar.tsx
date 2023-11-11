@@ -87,6 +87,12 @@ export default function NavBar() {
                     <List>
                       <Link href="/">
                         <ListItem p="1rem" onClick={onClose}>
+                        How tournaments work
+                        </ListItem>
+                      </Link>
+                      <hr style={{ opacity: ".5"}} />
+                      <Link href="/">
+                        <ListItem p="1rem" onClick={onClose}>
                           About
                         </ListItem>
                       </Link>

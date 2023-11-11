@@ -12,7 +12,7 @@ const HowItWorks = () => {
         </Box>
         <Flex gap={["1rem"]} px={["1.5rem"]} py={["1.3rem"]}>
             <Box borderRadius={["full"]} borderLeft={["1px solid gray"]}>
-                <Box bg={backgroundColors.pink} fontWeight={["bold"]} p={[".3rem"]} borderRadius={["full"]} w={["2rem"]} h={["2rem"]} display={["grid"]} placeItems={["center"]}>
+                <Box bg={backgroundColors.pink} fontWeight={["bold"]} p={[".3rem"]} borderRadius={["full"]} w={["1.5rem"]} h={["1.5rem"]} display={["grid"]} placeItems={["center"]} alignContent={["center"]}>
                     1
                 </Box>
             </Box>
@@ -27,7 +27,7 @@ const HowItWorks = () => {
         </Flex>
         <Flex gap={["1rem"]} px={["1.5rem"]} py={["1.3rem"]}>
             <Box borderRadius={["full"]} borderLeft={["1px solid gray"]}>
-                <Box bg={backgroundColors.pink} p={[".3rem"]} borderRadius={["full"]} w={["2rem"]} h={["2rem"]} display={["grid"]} placeItems={["center"]}>
+                <Box bg={backgroundColors.pink} p={[".3rem"]} borderRadius={["full"]} w={["1.5rem"]} h={["1.5rem"]} display={["grid"]} placeItems={["center"]} alignContent={["center"]}>
                     2
                 </Box>
             </Box>
@@ -42,7 +42,7 @@ const HowItWorks = () => {
         </Flex>
         <Flex gap={["1rem"]} px={["1.5rem"]} py={["1.3rem"]}>
             <Box borderRadius={["full"]} borderLeft={["1px solid gray"]}>
-                <Box bg={backgroundColors.pink} p={[".3rem"]} borderRadius={["full"]} w={["2rem"]} h={["2rem"]} display={["grid"]} placeItems={["center"]}>
+                <Box bg={backgroundColors.pink} p={[".3rem"]} borderRadius={["full"]} w={["1.5rem"]} h={["1.5rem"]} display={["grid"]} placeItems={["center"]} alignContent={["center"]}>
                     3
                 </Box>
             </Box>
@@ -60,7 +60,7 @@ const HowItWorks = () => {
         </Flex>
         <Flex gap={["1rem"]} px={["1.5rem"]} py={["1.3rem"]}>
             <Box borderRadius={["full"]} borderLeft={["1px solid gray"]}>
-                <Box bg={backgroundColors.pink} p={[".3rem"]} borderRadius={["full"]} w={["2rem"]} h={["2rem"]} display={["grid"]} placeItems={["center"]}>
+                <Box bg={backgroundColors.pink} p={[".3rem"]} borderRadius={["full"]} w={["1.5rem"]} h={["1.5rem"]} display={["grid"]} placeItems={["center"]} alignContent={["center"]}>
                     4
                 </Box>
             </Box>
@@ -75,8 +75,10 @@ const HowItWorks = () => {
             </Box>
         </Flex>
         <Box px={["1.5rem"]} boxShadow={["dark-lg"]} py={["1rem"]} mx={[".5rem"]} borderRadius={["lg"]} textAlign={["justify"]}>
-            Discover the excitement! Go to the free games section and join a table, where you can experience a demo without any deposit. 
-            Test the gameplay and immerse yourself in the thrill, all without spending a dime!
+            {`
+                🤔 You don't know how to play yet? Don't worry 😊, here is how you play, and you can watch a video in action with explanations,
+                You will see how simple and exciting it is!
+            `}
         </Box>
     </Box>
   )

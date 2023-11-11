@@ -19,6 +19,9 @@ const HowToPlay = () => {
               {`Start by joining a table. Once you're in, Decide how many tokens you want to bring to the game to take a seat. 
               Let's say you and your opponent both join with 10 tokens each.`}
             </Text>
+            <Box p={["1rem"]}>
+              [Image]
+            </Box>
           </Box>
           <Box>
             <Text fontWeight={["bold"]} py={[".3rem"]}>
@@ -28,6 +31,9 @@ const HowToPlay = () => {
               {`Each round, there's a leader and a follower. The leader goes first, followed by the follower, 
               and the outcome determines the winner of the round.`}
             </Text>
+            <Box p={["1rem"]}>
+              [Image]
+            </Box>
           </Box>
           <Box>
             <Text fontWeight={["bold"]} py={[".3rem"]}>
@@ -37,6 +43,9 @@ const HowToPlay = () => {
               {`If you're the leader for the round, you'll be presented with a choice: "H" or "T". 
               Pick one – let's say you choose "H".`}
             </Text>
+            <Box p={["1rem"]}>
+              [Image]
+            </Box>
           </Box>
           <Box>
             <Text fontWeight={["bold"]} py={[".3rem"]}>
@@ -46,6 +55,9 @@ const HowToPlay = () => {
             {`Now it's the follower's turn. As the follower, you have additional decisions to make. 
             You'll also choose between "H" and "T" and decide how much you want to bet. For example, you decide to bet 5 tokens on "T."`}
             </Text>
+            <Box p={["1rem"]}>
+              [Image]
+            </Box>
           </Box>
           <Box>
             <Text fontWeight={["bold"]} py={[".3rem"]}>
@@ -54,6 +66,9 @@ const HowToPlay = () => {
             <Text>
               {`With your choice of "H" as the leader and the follower's choice of "T" with a 5-token bet, it's time to see who wins the round.`}
             </Text>
+            <Box p={["1rem"]}>
+              [Image]
+            </Box>
           </Box>
           <Box>
             <Text fontWeight={["bold"]} py={[".3rem"]}>
@@ -63,6 +78,9 @@ const HowToPlay = () => {
               {`In this round, the follower loses the bet because they didn't select your value ("H"). As the leader, 
               you claim the 5 tokens bet by the follower. Your pot now contains 15 tokens, while the follower's pot decreases to 5 tokens.`}
             </Text>
+            <Box p={["1rem"]}>
+              [Image]
+            </Box>
           </Box>
           <Box>
             <Text fontWeight={["bold"]} py={[".3rem"]}>
@@ -72,6 +90,18 @@ const HowToPlay = () => {
               Get ready for the next round! You become the follower, and the previous follower becomes the leader. 
               The game continues with these roles switching back and forth.
             </Text>
+            <Box p={["1rem"]}>
+              [Image]
+            </Box>
+          </Box>
+
+          <Box>
+            <Text fontWeight={["bold"]} py={[".3rem"]} textAlign={["center"]}>
+              Here it is in action 🔥
+            </Text>
+            <Box p={["1rem"]}>
+              [Video]
+            </Box>
           </Box>
 
           <Box boxShadow={["dark-lg"]} py={["1rem"]} mx={[".5rem"]} borderRadius={["lg"]} textAlign={["justify"]} px={["1rem"]}>
