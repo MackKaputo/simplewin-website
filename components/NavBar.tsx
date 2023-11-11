@@ -72,12 +72,14 @@ export default function NavBar() {
             <DrawerContent bg={backgroundColors.card_color} opacity=".9">
               <DrawerCloseButton />
               <DrawerHeader>
-                <Image
-                  src={Logo}
-                  alt='SimpleWin'
-                  width={110}
-                  height={9}
-                /> 
+                <Link href="/">
+                  <Image
+                    src={Logo}
+                    alt='SimpleWin'
+                    width={110}
+                    height={9}
+                  />
+                </Link> 
               </DrawerHeader>
               <DrawerBody>
                 <Box>
