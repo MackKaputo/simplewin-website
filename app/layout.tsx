@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body style={{ backgroundColor: backgroundColors.main_background, color: "white"}} className={styles.body}>
         <ChakraProvider>
           <NavBar />
