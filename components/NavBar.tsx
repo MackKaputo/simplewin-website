@@ -86,13 +86,15 @@ export default function NavBar() {
                   <List>
                     <Link href="/how-tournaments-work">
                       <ListItem p="1rem" onClick={onClose}>
-                      How tournaments work
+                        {/* How tournaments work */}
+                        Fonctionnement des tournois
                       </ListItem>
                     </Link>
                     <hr style={{ opacity: ".5"}} />
                     <Link href="/">
                       <ListItem p="1rem" onClick={onClose}>
-                        About
+                        {/* About */}
+                        À propos
                       </ListItem>
                     </Link>
                     <hr style={{ opacity: ".5"}}/>
@@ -114,12 +116,14 @@ export default function NavBar() {
                 <Flex pt={["3rem"]} justify={["space-around"]}>
                   <Box>
                     <Button colorScheme='orange'>
-                      Signup
+                      {/* Signup */}
+                      Inscription
                     </Button>
                   </Box>
                   <Box>
                     <Button colorScheme='orange'>
-                      Signin
+                      {/* Signin */}
+                      Connexion
                     </Button>
                   </Box>
                 </Flex>

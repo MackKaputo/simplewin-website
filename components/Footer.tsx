@@ -6,7 +6,8 @@ const Footer = () => {
   return (
     <Box py={["2rem"]} px={["1.5rem"]} bg={backgroundColors.dark_gray} opacity={[".8"]}>
         <Box>
-          About
+          {/* About */}
+          À propos
         </Box>
         <Box>
           Contact
@@ -15,7 +16,7 @@ const Footer = () => {
           FAQ
         </Box>
         <Box>
-          Social Media Links
+          Facebook - Instagram - Tiktok - WhatSapp
         </Box>
     </Box>
   )
