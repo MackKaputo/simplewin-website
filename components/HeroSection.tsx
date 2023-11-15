@@ -8,7 +8,7 @@ import {
 import {TbBrandCashapp} from "react-icons/tb"
 import { GiTrophy } from "react-icons/gi"
 import Image from 'next/image'
-import gameTableImage from "../public/images/game_table_view.jpeg"
+import gameTableImage from "../public/images/game_table_view.png"
 
 export default function HeroSection() {
     return(
